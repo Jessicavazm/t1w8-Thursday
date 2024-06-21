@@ -13,4 +13,24 @@
 - Avoids inheritance's pitfall: Changes in base class can unintentionally affect the derived class, which may break their functionality.
 - Composition does not directly affect the composed class, as the class inherits with component classes through well-defined interfaces.
 
-# Er
+# Error Handling
+## Taxonomy of Python Errors
+- Silent Logical Errors - Codes that run fine, but are logically incorrect.
+- Assertion Errors - Raises when "assert" statement fails. If condition is True, nothing happens, if false, raises AssertionError.
+- Syntax Errors - Errors in the written syntax, that Python interpreter cannot understand.
+- Exceptions - Runtime errors, occurs during program execution. Python has built-in exception to handle common errors
+
+# Stack Trace Interpretation
+- Text that appears when Python encounters an exception = "stack trace".
+- When exception occurs, the interpreter prints a stack trace that shows where the error happened and how the code reached that point.
+- Start with: Exception, then the trace.
+
+# Try / Except / Finally
+- Comprehensive way to handle exceptions
+- Ensures code always runs, regardless wether an error occurs.
+- "try" block has code that may raise exception.
+- "except" block has code that handles the exception.
+- "finally" block has the code that should always be executed.
+
+
+### Print every step in the way to make sure code is working properly
